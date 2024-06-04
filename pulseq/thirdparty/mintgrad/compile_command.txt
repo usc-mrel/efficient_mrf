@@ -1,0 +1,1 @@
+mex -v -R2017b socp_mex.c -lmwblas -lmwlapack
