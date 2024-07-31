@@ -24,7 +24,17 @@ The programe was originally excuted on a Hyperplane 2U system with 4 Nvidia A100
   cd ./pulseq/lowfield_mrf;
   run make_mrf_sequence.m;
   ```
-* *data*: Data storage folder.
+* *data*: Data storage folder. Suffix: &nbsp;*_iso* or no suffix: Data were acquired at isocenter. &nbsp;*_h75mm*: Data were acquired at Head 75 mm location.\
+  *data/dictionaries/disc/pulsel_readout_experiments/*: All dictionary files.\
+  *data/phantom/pulseq_mrf_20231113*: The ACR MRI phantom data.\
+  *data/phantom/pulseq_mrf_20240306*: The ISMRM/NIST system phantom data.\
+  *data/volunteer/*: Two healthy volunteer data.\
+  *$subsfolder/b0mapping/*: B0 mapping dicom images.\
+  *$subsfolder/b1mapping/*: B1 mapping dicom images.\
+  *$subsfolder/nufft_3d/*: Plain gridding reconstruction results.\
+  *$subsfolder/subspace_3d/*: Subspace modelling + gridding reconstruction results.\
+  *$subsfolder/maxgirf_3d/*: Subspace modelling + MaxGIRF encoding reconstruction results.\
+  
   
 # Data availability
 https://drive.google.com/drive/folders/1UfJkXGt2ioBZ8tzAUWCpVHZqJ27lrU03?usp=sharing
