@@ -423,7 +423,7 @@ for opt_indx            = [1 3 5 8 11 14] % Phantom, 1:14
         kspace          = ifftshift(ifft(kspace, [], 2), 2);
 
         %% NUFFT
-        slice_loc       = 8:40;
+        slice_loc       = [25 36];
         tstart          = tic;
         for nr_slice = slice_loc % 1:nr_slices if recon all slices.
             for nr_time = 1:nr_time_frames
