@@ -2,8 +2,9 @@ clear; clc; close all
 
 %%% Tight subplot path.
 addpath(genpath('../src/utils/tight_subplot'));
-addpath('../src/pulseq_mrf_recon');(genpath('~/Documents/MATLAB/mrel/util/tight_subplot'));
-addpath('~/Documents/MATLAB/mrel/3d_mrf/pulseq_mrf_recon');
+addpath('../src/pulseq_mrf_recon');
+addpath(genpath('../src/utils/tight_subplot'));
+addpath('../src/pulseq_mrf_recon');
 
 ni = [6 7 8 9 10 11 12 14 16 19 22 27 34 48];
 nt = [278 317 352 382 421 451 481 535 585 654 709 798 892 1036];
