@@ -31,7 +31,6 @@ The programe was originally excuted on a Hyperplane 2U system with 4 Nvidia A100
   *data/volunteer/*: Two healthy volunteer data.\
   *$subsfolder/b0mapping/*: B0 mapping dicom images.\
   *$subsfolder/b1mapping/*: B1 mapping dicom images.\
-  *$subsfolder/nufft_3d/*: Plain gridding reconstruction results.\
   *$subsfolder/subspace_3d/*: Subspace modelling + gridding reconstruction results.\
   *$subsfolder/maxgirf_3d/*: Subspace modelling + MaxGIRF encoding reconstruction results.\
   
