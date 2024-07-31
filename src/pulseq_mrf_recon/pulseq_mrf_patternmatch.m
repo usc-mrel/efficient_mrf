@@ -29,7 +29,7 @@ for opt_indx = [1 3 5 8 11 14] % Phantom, 1:14
     end
     fprintf('Done! Time cost: %.2f sec.\n', toc(tstart));
     
-    for slice_loc = 20:40
+    for slice_loc = [25 36]
         mat_names{1} = fullfile(data_dir, 'nufft_3d', sprintf('pulseq_mrf_slice%d__fa75_cycle2_ni%d_nt%d%s.mat', slice_loc, Ni(opt_indx), Nt(opt_indx), opt_data));
         mat_names{2} = fullfile(data_dir, 'subspace_3d', sprintf('pulseq_mrf_subspace_slice%d_B1__fa75_cycle2_ni%d_nt%d%s.mat', slice_loc, Ni(opt_indx), Nt(opt_indx), opt_data));
         mat_names{3} = fullfile(data_dir, 'maxgirf_3d', sprintf('pulseq_mrf_maxgirf_slice%d_B0__fa75_cycle2_ni%d_nt%d%s.mat', slice_loc, Ni(opt_indx), Nt(opt_indx), opt_data));
