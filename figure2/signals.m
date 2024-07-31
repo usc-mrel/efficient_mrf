@@ -18,7 +18,7 @@ xlim([0 7.5]);
 set(gca, 'FontSize', 16);
 
 for ii = 14:-1:1
-    dict_name = sprintf('../../mrf/dictionaries/pulseq_readout_experiments/fisp_mrf_3d_ni%d_nt%d_rf1.mat', ni(ii), nt(ii));
+    dict_name = sprintf('../data/dictionaries/disc/pulseq_readout_experiments/fisp_mrf_3d_ni%d_nt%d_rf1.mat', ni(ii), nt(ii));
 
     load(dict_name, 'dict', 'r');
     s = abs(dict(:, end, indx2)); % Signal evolution.

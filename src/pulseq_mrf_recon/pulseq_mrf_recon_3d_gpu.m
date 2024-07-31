@@ -26,11 +26,11 @@ opt_data            = '';
 opt_dict            = '';
 opt_traj            = '';
 for opt_indx            = [1 3 5 8 11 14] % Phantom, 1:14
-    seq_path            = sprintf('../../pulseq/lowfield_mrf/different_ro_fa_fm/fisp_mrf_3d_fa75_cycle2_ni%d_nt%d.seq', Ni(opt_indx), Nt(opt_indx));
-    traj_dir            = sprintf('../../pulseq/pulseq/lowfield_mrf/different_ro_fa_fm/traj_vdspiral_ni%d_nt%d%s.h5', Ni(opt_indx), Nt(opt_indx), opt_traj);
+    seq_path            = sprintf('../../pulseq/lowfield_mrf/different_ro_fa_fm/fisp_mrf_3d_fa75_cycle2_ni%d_nt%d.seq', Nr_interleaves(opt_indx), Nt(opt_indx));
+    traj_dir            = sprintf('../../pulseq/pulseq/lowfield_mrf/different_ro_fa_fm/traj_vdspiral_ni%d_nt%d%s.h5', Nr_interleaves(opt_indx), Nt(opt_indx), opt_traj);
     data_dir            = '../../data/volunteer/pulseq_mrf_20240329';
-    dat_name            = sprintf('meas_MID*_FID*_fisp_mrf_3d_fa75_cycle2_ni%d_nt%d%s.dat', Ni(opt_indx), Nt(opt_indx), opt_data);
-    dict_path           = sprintf('../../data/dictionaries/disc/pulseq_20230705/dict_ni%d_nt%d%s', Ni(opt_indx), Nt(opt_indx), opt_dict);
+    dat_name            = sprintf('meas_MID*_FID*_fisp_mrf_3d_fa75_cycle2_ni%d_nt%d%s.dat', Nr_interleaves(opt_indx), Nt(opt_indx), opt_data);
+    dict_path           = sprintf('../../data/dictionaries/disc/pulseq_20230705/dict_ni%d_nt%d%s', Nr_interleaves(opt_indx), Nt(opt_indx), opt_dict);
 
     %% Read a .seq file
     start_time = tic;
